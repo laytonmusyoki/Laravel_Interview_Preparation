@@ -1,15 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crud</title>
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-</head>
-<body>
-    <h1>Employee</h1>
+@extends('base')
 
-    @if(session()->has('success'))
+@section('title','Employees')
+
+    
+
+@section('content') 
+
+
+
+@if(session()->has('success'))
 
 
     <p class="btn btn-success">{{session()->get('success')}}</p>
@@ -42,5 +41,10 @@
             @endforeach
         </tbody>
     </table>
-</body>
-</html>
+
+
+
+
+@endsection
+
+    
